@@ -116,9 +116,10 @@
     fabric.Object.prototype.originX = fabric.Object.prototype.originY = 'center';
     fabric.Object.prototype.transparentCorners = false;
 
+    var ratio = window.devicePixelRatio;
     var imgData = {
-        spriteWidth: width * 2,
-        spriteHeight: height * 2,
+        spriteWidth: width * ratio,
+        spriteHeight: height * ratio,
         spriteIndex: 0,
         frameTime: 150,
     }
